@@ -1,12 +1,13 @@
-<!-- <p>
-  <mat-toolbar class ='purples'color="warn">
+<p>
+  <mat-toolbar class='purples' color="warn">
     <mat-icon>close</mat-icon>Conte et legendes du Quebec
   </mat-toolbar>
-</p> -->
+</p>
 <!-- <mat-card> Hello Material Design World</mat-card> -->
 
-<!-- <p>
+<p>
   <button mat-flat-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <!-- <mat-icon fontSet="fontIcons" fontIcon="fontIcon">Menu</mat-icon> -->
     Menu
   </button>
   <mat-menu #menu="matMenu">
@@ -19,11 +20,11 @@
 
   </mat-menu>
   <mat-sidenav></mat-sidenav>
-</p> -->
+</p>
 
 <!--fenge-->
-<!-- <p>
-  <mat-toolbar class ='purples' color="warn">
+<p>
+  <mat-toolbar class='purples' color="warn">
     <mat-icon>close</mat-icon>Chez Leve-Tot
   </mat-toolbar>
 </p>
@@ -35,25 +36,35 @@
     (closed)="events.push('close!')">
     <p><strong>Mon painer</strong></p>
     <p>Sous total:<strong>9,00$</strong></p>
-  <mat-list role="list">
-    <mat-list-item role="listitem"><mat-icon>local_cafe</mat-icon>Cafe</mat-list-item>
-    <mat-list-item role="listitem"><mat-icon>local_drink</mat-icon>Jus d'orange</mat-list-item>
-    <mat-list-item role="listitem"><mat-icon>breakfast_dining</mat-icon>Tartine au chocolat</mat-list-item>
-  </mat-list>
-  <p id='btn'>
-  <button  mat-flat-button class='purples' >Payer</button>
-  </p>
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <mat-icon>local_cafe</mat-icon>Cafe
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <mat-icon>local_drink</mat-icon>Jus d'orange
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <mat-icon>breakfast_dining</mat-icon>Tartine au chocolat
+      </mat-list-item>
+    </mat-list>
+    <p id='btn'>
+      <button mat-flat-button class='purples'>Payer</button>
+    </p>
   </mat-sidenav>
 
   <mat-sidenav-content>
 
-    <p><button mat-button (click)="sidenav.toggle()">panier</button></p>
+    <p><button mat-raised-button (click)="sidenav.toggle()">panier</button></p>
 
   </mat-sidenav-content>
 
 </mat-sidenav-container>
 
 
+
+<!-- <button mat-icon-button color="warn" aria-label="Example icon-button with menu icon">
+  <mat-icon>menu</mat-icon>
+</button>
 
 <section>
   <div class="example-label">Basic</div>
@@ -67,4 +78,3 @@
   </div>
 </section> -->
 
-<app-ex1></app-ex1>
